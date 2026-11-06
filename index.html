@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BarkadaFund — Trip & Outing Budget Planner</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="container">
+      <h1>BarkadaFund</h1>
+      <p>Barkada Trip & Outing Budget Planner</p>
+    </div>
+  </header>
+
+  <main class="container app-grid">
+    <!-- Left Column: Member 3 (Summary/Calculator) & Member 1 (Form) -->
+    <section class="left-panel">
+      <div id="budget-calculator-container" class="card"></div>
+      <div id="expense-form-container" class="card"></div>
+    </section>
+
+    <!-- Right Column: Member 2 (Expense List Table) -->
+    <section class="right-panel">
+      <div id="expense-list-container" class="card"></div>
+    </section>
+  </main>
+
+  <!-- ES Module script: No inline onclick needed -->
+  <script type="module" src="js/controller.js"></script>
+</body>
+</html>
